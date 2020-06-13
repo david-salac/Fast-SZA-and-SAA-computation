@@ -1,10 +1,17 @@
 # Fast algorithm for the computation of the SZA and SAA
+
+Author: David Salac <https://github.com/david-salac/>
+
 The implementation of the fast algorithm for computation of the
 Solar Zenith Angle (aka SZA) and Solar Azimut Angle (aka SAA) based
 on the logic proposed by Roberto Grena in 2012
 (https://doi.org/10.1016/j.solener.2012.01.024).
 The precision of the algorithm is 0.3 degrees for the SZA and 0.5
 degrees for the SAA (mean-average error).
+
+Implementation is available in two languages:
+* Python (for versions 3.x only)
+* Go language
 
 ## Testing of the algorithm
 Algorithm has been tested using PVLIB implementation of the SZA and SAA
