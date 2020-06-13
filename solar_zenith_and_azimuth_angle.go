@@ -16,7 +16,7 @@ type SzaAndSaa struct {
 }
 
 func SolarZenithAndAzimuthAngle(longitude, latitude float64, timeSeries []time.Time) []SzaAndSaa {
-	/// Method that returns solar zenith and azimuth angle sequence at given location and for given time series.
+	/// Function that returns solar zenith and azimuth angle sequence at given location and for given time series.
 	///
 	/// Solar Zenith Angle is calculated with precision 0.3 degree in average (maximal error is 1.5 degree), and
 	///     the Solar Azimuth Angle is calculated with precision 0.5 degree (maximal error is 2 degree).
@@ -24,12 +24,12 @@ func SolarZenithAndAzimuthAngle(longitude, latitude float64, timeSeries []time.T
 	///     online: https://doi.org/10.1016/j.solener.2012.01.024
 	///
 	/// Args:
-	///		longitude (float64): Longitude of the location in degrees.
-	///		latitude (float64): Latitude of the location in degrees.
-	///		time_series ([]time.Time): Time series for which the zenith and azimuth angle is computed
+	///     longitude (float64): Longitude of the location in degrees.
+	///         latitude (float64): Latitude of the location in degrees.
+	///     time_series ([]time.Time): Time series for which the zenith and azimuth angle is computed
 	///
-	///	Returns:
-	/// 	[]float64: The sequence of solar zenith and azimuth angles
+	/// Returns:
+	///     []float64: The sequence of solar zenith and azimuth angles
 	year := make([]float64, len(timeSeries))
 	month := make([]float64, len(timeSeries))
 	day := make([]float64, len(timeSeries))
