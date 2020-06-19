@@ -11,8 +11,8 @@ degrees for the SAA (mean-average error).
 
 Implementation is available in two languages:
 * Python (for versions 3.x only)
-* Go language
-* C++ version
+* Go language (located in the folder 'GO_version')
+* C++ version (located in the folder 'CPP_version')
 
 ## Testing of the algorithm
 Algorithm has been tested using PVLIB implementation of the SZA and SAA
